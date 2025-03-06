@@ -1,5 +1,8 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.service;
 
+import com.miniidv.miniidv.repository.UserRepository;
+import com.miniidv.miniidv.enums.UserStatus;
+import com.miniidv.miniidv.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,7 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.controller;
 
-import org.springframework.stereotype.Controller;
+import com.miniidv.miniidv.service.UserService;
+import com.miniidv.miniidv.model.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

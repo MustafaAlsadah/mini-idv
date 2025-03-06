@@ -1,4 +1,4 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.enums;
 
 public enum DocumentStatus {
     PENDING,

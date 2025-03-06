@@ -1,13 +1,13 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.miniidv.miniidv.enums.DocumentStatus;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
 @Entity
 public class Document {
-    //
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -1,5 +1,8 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.service;
 
+import com.miniidv.miniidv.repository.DocumentRepository;
+import com.miniidv.miniidv.model.Document;
+import com.miniidv.miniidv.model.User;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +16,6 @@ public class DocumentService {
     private DocumentRepository docsRepo;
     @Autowired
     private UserService userService;
-//
 
     public List<Document> getDocs(){
         return  docsRepo.findAll();

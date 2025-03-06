@@ -1,4 +1,4 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.model;
 
 public class VerificationRequest {
     private String selfieUrl;

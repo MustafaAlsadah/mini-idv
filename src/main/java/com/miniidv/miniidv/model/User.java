@@ -1,6 +1,7 @@
-package com.miniidv.miniidv;
+package com.miniidv.miniidv.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.miniidv.miniidv.enums.UserStatus;
 import jakarta.persistence.*;
 
 import java.util.List;

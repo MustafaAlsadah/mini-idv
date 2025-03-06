@@ -1,14 +1,12 @@
-# Use an official OpenJDK runtime as a parent image
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:21-jdk
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the application JAR file to the container
-COPY target/*.jar app.jar
+COPY target/mini-idv-0.0.1-SNAPSHOT.jar app.jar
 
-# Expose port 8080
-EXPOSE 8080
+ENV PORT=8080
 
-# Run the JAR file
-CMD ["java", "-jar", "app.jar", "--server.port=${PORT}"]
+EXPOSE ${PORT}
+
+# Use ENTRYPOINT with shell form to ensure environment variables are expanded
+ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=${PORT}"]
